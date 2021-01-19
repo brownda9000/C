@@ -1,0 +1,63 @@
+conninfo;
+:conninfo;
+conninfo;
+ll;
+:ll
+:sp
+:uptime
+:locks
+:dbsize
+:conninfo
+SHOW client_encoding;
+SELECT   (total_time / 1000 / 60) as total_minutes,   (total_time/calls) as average_time,   query FROM pg_stat_statements ORDER BY 1 DESC LIMIT 100;
+select * from pg_stat_statements;
+\d pg_stat_statements 
+CREATE EXTENSION pg_stat_statements ;
+\d pg_stat_statements 
+select * from pg_stat_statements;
+SELECT   (total_time / 1000 / 60) as total_minutes,   (total_time/calls) as average_time,   query FROM pg_stat_statements ORDER BY 1 DESC LIMIT 100;
+shared_preload_libraries='pg_stat_statements,pg_qualstats,pg_stat_kcache,hypopg,pg_track_settings,powa';
+SELECT   (total_time / 1000 / 60) as total_minutes,   (total_time/calls) as average_time,   query FROM pg_stat_statements ORDER BY 1 DESC LIMIT 100;
+SELECT   sum(heap_blks_read) as heap_read,  sum(heap_blks_hit)  as heap_hit,  sum(heap_blks_hit) / (sum(heap_blks_hit) + sum(heap_blks_read)) as ratioFROM   pg_statio_user_tables;
+create user daveb with password 'docker';
+grant SELECT ON pg_stat_database to daveb;
+localhost postgres@postgres=# create user <USERNAME>^Cith password 'docker';
+select * from pg_stat_database;
+SELECT * FROM pg_stat_user_tables;
+SELECT * FROM pg_statio_user_tables;
+SELECT   relname,   100 * idx_scan / (seq_scan + idx_scan) percent_of_times_index_used,   n_live_tup rows_in_tableFROM   pg_stat_user_tablesWHERE     seq_scan + idx_scan > 0 ORDER BY   n_live_tup DESC;
+\d
+SELECT   relname,   100 * idx_scan / (seq_scan + idx_scan) percent_of_times_index_used,   n_live_tup rows_in_tableFROM   pg_stat_user_tablesWHERE     seq_scan + idx_scan > 0 ORDER BY   n_live_tup DESC;
+select * from pg_stat_database;
+postgres=# SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) hit_ratio FROM pg_stat_database WHERE datname = 'postgres';
+hit_ratio -----------99.69(1 row)postgres=# SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) hit_ratio FROM pg_stat_database WHERE datname = 'postgres';
+hit_ratio -----------99.69(1 row)postgres=# SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) as 'hit_ratio' FROM pg_stat_database WHERE datname = 'postgres';
+hit_ratio -----------99.69(1 row)postgres=# SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) as hit_ratio FROM pg_stat_database WHERE datname = 'postgres';
+hit_ratio -----------99.69(1 row)postgres=# SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) as "hit_ratio" FROM pg_stat_database WHERE datname = 'postgres';
+hit_ratio -----------99.69(1 row)postgres=# SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) FROM pg_stat_database WHERE datname = 'postgres';
+SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) FROM pg_stat_database WHERE datname = 'postgres';
+SELECT TRUNC(((blks_hit)/(blks_read+blks_hit)::numeric)*100, 2) as hitratio FROM pg_stat_database WHERE datname = 'postgres';
+SELECT   sum(idx_blks_read) as idx_read,  sum(idx_blks_hit)  as idx_hit,  (sum(idx_blks_hit) - sum(idx_blks_read)) / sum(idx_blks_hit) as ratioFROM   pg_statio_user_indexes;
+\list
+CREATE DATABASE example;
+\list
+CREATE DATABASE example;
+\list
+\list
+\c example
+\d
+\d
+\t
+\conn examples
+\c example;
+\d
+select count() from pgbench_accounts;
+select *,count() from pgbench_accounts;
+select count(!) from pgbench_accounts;
+select count(*) from pgbench_accounts;
+EXPLAIN(ANALYZE,COSTS,VERBOSE,BUFFERS,FORMAT JSON) select count(!) from pgbench_accounts;
+\t pgbench_accounts
+\d pgbench_accounts
+EXPLAIN(ANALYZE,COSTS,VERBOSE,BUFFERS,FORMAT JSON) select count(bid) from pgbench_accounts;
+\o out.json
+EXPLAIN(ANALYZE,COSTS,VERBOSE,BUFFERS,FORMAT JSON) select count(bid) from pgbench_accounts;
