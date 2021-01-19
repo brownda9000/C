@@ -1,0 +1,1 @@
+/usr/bin/clang++    -fprofile-arcs -ftest-coverage -fPIC  -ftime-trace -flto -ftime-report -Wall -Wno-sign-compare -fsanitize=address -fsanitize=undefined  -fstack-protector -fstack-protector-strong -fstack-protector-all -fsanitize=cfi -fvisibility=hidden  -fuse-ld=lld -flto=full CMakeFiles/MakeTable.dir/MakeTable.cxx.o  -o ../MakeTable 

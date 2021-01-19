@@ -1,0 +1,5 @@
+clang++ -Wall -std=c++14 CacheBench.cpp -lbenchmark -lpthread -o CacheBench
+clang++ -Wall -std=c++14 bench_ex2.cpp -lbenchmark -lpthread -o bench_ex2
+
+./bench_ex2 --benchmark_filter=BM_memcpy/128,BM_DenseRange/896   ^C
+daveb@DESKTOP-2HIKCGM:~/C++/benchmarks$ ./bench_ex2 --benchmark_counters_tabular=true
