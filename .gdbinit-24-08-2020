@@ -1,0 +1,25 @@
+set breakpoint pending on # Disables that pesky dialog
+set print pretty on
+set history filename ~/.gdb_history
+set history save on
+set history size 10000
+set pagination off
+set print pretty on
+set confirm off
+set logging file gdb.txt
+set logging on
+info breakpoints
+#set logging off
+define irg
+	info registers
+	info threads
+end
+ 
+define pdb
+	print a1
+	print a2
+	call print_dbg()
+end
+set $myvar = 100
+#set $count = 0
+#break funMethod: if ++$count == 1000
