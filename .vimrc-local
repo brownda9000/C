@@ -1,0 +1,8 @@
+set cursorline
+set rnu
+set nu rnu
+set incsearch  ignorecase  smartcase  hlsearch
+set updatecount=10
+set colorcolumn=80
+set ruler
+set syntax on
