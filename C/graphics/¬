@@ -1,0 +1,1 @@
+clang-tidy -checks=-*,clang-analyzer-*,-clang-analyzer-cplusplus* test.cpp -- -DDEBUG -I./include

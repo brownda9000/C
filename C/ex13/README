@@ -1,0 +1,3 @@
+$ gcc -c -o libmyfunc.o libmyfunc.c 
+$ ar rcs mylib.a libmyfunc.o
+$ gcc main.c mylib.a

@@ -1,0 +1,84 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFFER_SIZE	myfunctions.h	17;"	d
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -ggdb3 -pedantic$/;"	m
+DEBUG	ex6.c	16;"	d	file:
+DEPS	Makefile	/^DEPS = myfunctions.h$/;"	m
+MAX_CITY	ex7.c	14;"	d	file:
+MAX_CITY	myfunctions.h	16;"	d
+MAX_NAME	ex7.c	12;"	d	file:
+MAX_NAME	myfunctions.h	14;"	d
+MAX_SURNAME	ex7.c	13;"	d	file:
+MAX_SURNAME	myfunctions.h	15;"	d
+OBJ	Makefile	/^OBJ = ex6.o$/;"	m
+a	func.c	/^char a() {$/;"	f
+balanceBtree	myfunctions.h	/^int balanceBtree() {$/;"	f
+checkFileOpen	ex7.c	/^void checkFileOpen(FILE *fp, char *mesg) {$/;"	f
+checkFileOpen	myfunctions.h	/^void checkFileOpen(FILE *fp, char *mesg) {$/;"	f
+city	ex7.c	/^	char  name[MAX_NAME]  , surname[MAX_SURNAME], city[MAX_CITY];$/;"	m	struct:employees	file:
+city	myfunctions.h	/^	char  name[MAX_NAME]  , surname[MAX_SURNAME], city[MAX_CITY];$/;"	m	struct:employees
+counter	windows.c	/^static int counter = 0;$/;"	v	file:
+createBTreeNode	myfunctions.h	/^struct empnode* createBTreeNode() {$/;"	f
+curr	ex7.c	/^	struct employees *next, *curr;$/;"	m	struct:employees	typeref:struct:employees::	file:
+curr	myfunctions.h	/^	struct employees *next, *curr;$/;"	m	struct:employees	typeref:struct:employees::
+debug_printf	ex6.c	18;"	d	file:
+deleteItem	myfunctions.h	/^void deleteItem(struct employees *top, int employeeid) {$/;"	f
+destroy	windows.c	/^void destroy( GtkWidget *widget,gpointer   data )$/;"	f
+destroyList	myfunctions.h	/^void destroyList(struct employees *top) {$/;"	f
+display_list	ex7.c	/^void display_list(struct employees *top) {$/;"	f
+display_list	myfunctions.h	/^void display_list(struct employees *top) {$/;"	f
+emp_id	ex7.c	/^	int emp_id;$/;"	m	struct:employees	file:
+emp_id	myfunctions.h	/^	int emp_id;$/;"	m	struct:employees
+employee	myfunctions.h	/^	struct employees employee;$/;"	m	struct:empnode	typeref:struct:empnode::employees
+employees	ex7.c	/^struct employees {$/;"	s	file:
+employees	myfunctions.h	/^struct employees {$/;"	s
+empnode	myfunctions.h	/^struct empnode {$/;"	s
+getField	ex7.c	/^char *getField ( char buffer[1024], int fieldno ) {$/;"	f
+getField	myfunctions.h	/^char *getField ( char buffer[BUFFER_SIZE], int fieldno ) {$/;"	f
+greet	windows.c	/^void greet( GtkWidget *widget, gpointer   data )$/;"	f
+head	ex6.c	/^struct employees *head;$/;"	v	typeref:struct:employees
+head	myfunctions.h	/^struct employees *head;  \/\/ Global head of queue$/;"	v	typeref:struct:employees
+hello	ex2.c	/^void hello(){$/;"	f
+insertBtreeEmployee	myfunctions.h	/^void insertBtreeEmployee( char line[BUFFER_SIZE], int count) {$/;"	f
+left	myfunctions.h	/^	struct empnode *left;$/;"	m	struct:empnode	typeref:struct:empnode::empnode
+listAdd	ex7.c	/^struct employees* listAdd(struct employees *node, char line[1024], int count) {$/;"	f
+listAdd	myfunctions.h	/^struct employees* listAdd(struct employees *node, char line[BUFFER_SIZE], int count) {$/;"	f
+logmesg	ex7.c	/^void logmesg(char * mesg ) {$/;"	f
+logmesg	myfunctions.h	/^void logmesg(char * mesg ) {$/;"	f
+main	ex1.c	/^int main()$/;"	f
+main	ex2.c	/^int main()$/;"	f
+main	ex3.c	/^void main()$/;"	f
+main	ex4.c	/^int main()$/;"	f
+main	ex5.c	/^int main()$/;"	f
+main	ex6.c	/^int main(int argc, char **argv) {$/;"	f
+main	ex7.c	/^int main(void) {$/;"	f
+main	func.c	/^int main()$/;"	f
+main	special_number.c	/^int main()$/;"	f
+main	template.c	/^int main()$/;"	f
+main	windows.c	/^int main( int   argc,char *argv[] )$/;"	f
+main_menu	ex7.c	/^void main_menu(struct employees *top){$/;"	f
+main_menu	myfunctions.h	/^void main_menu(){$/;"	f
+name	ex7.c	/^	char  name[MAX_NAME]  , surname[MAX_SURNAME], city[MAX_CITY];$/;"	m	struct:employees	file:
+name	myfunctions.h	/^	char  name[MAX_NAME]  , surname[MAX_SURNAME], city[MAX_CITY];$/;"	m	struct:employees
+next	ex7.c	/^	struct employees *next, *curr;$/;"	m	struct:employees	typeref:struct:employees::employees	file:
+next	myfunctions.h	/^	struct employees *next, *curr;$/;"	m	struct:employees	typeref:struct:employees::employees
+next	myfunctions.h	/^	struct stack   *next;$/;"	m	struct:stack	typeref:struct:stack::stack
+node	myfunctions.h	/^	struct empnode *node;$/;"	m	struct:stack	typeref:struct:stack::empnode
+node_id	myfunctions.h	/^	int node_id;$/;"	m	struct:empnode
+pop	myfunctions.h	/^struct empnode* pop () {$/;"	f
+power	special_number.c	/^int power( int x, int pow ) {$/;"	f
+printEmployeesHtml	myfunctions.h	/^void printEmployeesHtml(struct employees *top) {$/;"	f
+push	myfunctions.h	/^void push( struct empnode *node ) {$/;"	f
+right	myfunctions.h	/^	struct empnode *right;	$/;"	m	struct:empnode	typeref:struct:empnode::empnode
+root	myfunctions.h	/^struct empnode *root = NULL;       \/\/ Top of employee Binary tree$/;"	v	typeref:struct:empnode
+searchSurname	myfunctions.h	/^void searchSurname(struct employees *top, char* surname) {$/;"	f
+special_num	special_number.c	/^int special_num( int num ) {$/;"	f
+stack	myfunctions.h	/^struct stack {$/;"	s
+stackhead	myfunctions.h	/^struct stack   *stackhead = NULL;  \/\/ Top of employee stack$/;"	v	typeref:struct:stack
+surname	ex7.c	/^	char  name[MAX_NAME]  , surname[MAX_SURNAME], city[MAX_CITY];$/;"	m	struct:employees	file:
+surname	myfunctions.h	/^	char  name[MAX_NAME]  , surname[MAX_SURNAME], city[MAX_CITY];$/;"	m	struct:employees

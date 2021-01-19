@@ -1,0 +1,38 @@
+top - 16:40:59 up  2:24,  0 users,  load average: 0.00, 0.00, 0.00
+Tasks:   5 total,   1 running,   4 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.8 us,  0.0 sy,  0.0 ni, 99.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   6247.4 total,   6008.4 free,     77.4 used,    161.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5966.9 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0    1368    880    516 S   0.0   0.0   0:02.56 init
+   31 root      20   0    1300    492     16 S   0.0   0.0   0:00.00 init
+   32 root      20   0    1300    492     16 S   0.0   0.0   0:00.08 init
+   33 daveb     20   0   10176   5280   3404 S   0.0   0.1   0:00.20 bash
+  419 daveb     20   0   10728   3648   3192 R   0.0   0.1   0:00.01 top
+
+top - 16:41:09 up  2:24,  0 users,  load average: 0.00, 0.00, 0.00
+Tasks:   5 total,   1 running,   4 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   6247.4 total,   6008.4 free,     77.4 used,    161.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5966.9 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0    1368    880    516 S   0.0   0.0   0:02.56 init
+   31 root      20   0    1300    492     16 S   0.0   0.0   0:00.00 init
+   32 root      20   0    1300    492     16 S   0.0   0.0   0:00.08 init
+   33 daveb     20   0   10176   5280   3404 S   0.0   0.1   0:00.20 bash
+  419 daveb     20   0   10728   3648   3192 R   0.0   0.1   0:00.01 top
+
+top - 16:41:19 up  2:24,  0 users,  load average: 0.08, 0.02, 0.01
+Tasks:   5 total,   1 running,   4 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   6247.4 total,   6008.4 free,     77.4 used,    161.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5966.9 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0    1368    880    516 S   0.0   0.0   0:02.56 init
+   31 root      20   0    1300    492     16 S   0.0   0.0   0:00.00 init
+   32 root      20   0    1300    492     16 S   0.0   0.0   0:00.08 init
+   33 daveb     20   0   10176   5280   3404 S   0.0   0.1   0:00.20 bash
+  419 daveb     20   0   10728   3648   3192 R   0.0   0.1   0:00.01 top

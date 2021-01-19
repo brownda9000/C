@@ -1,0 +1,36 @@
+[5097][environment] CWD = /home/daveb/C/memory/mem1
+[5097][environment] No .inferconfig file found
+[5097][environment] Project root = /home/daveb/C/memory/mem1
+[5097][environment] INFER_ARGS =   @/tmp/args.tmp.88efb6  ++Contents of '/tmp/args.tmp.88efb6':
+[5097][environment]                                         run
+[5097][environment]                                       
+[5097][environment] command line arguments:   infer run -- gcc -c src/mem1.cActive checkers: biabduction (C/C++/ObjC, Java), fragment retains view (Java), inefficient keyset iterator (Java), liveness (C/C++/ObjC), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC), uninitialized variables (C/C++/ObjC), Starvation analysis (C/C++/ObjC, Java)
+[5097][environment] Infer log identifier is 
+Infer version v0.17.0
+[5097][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[5097][environment] 
+[5097][   progress] Capturing in make/cc mode...
+[5097][      debug] 
+[5097][      debug] *** Beginning capture of file /home/daveb/C/memory/mem1/src/mem1.c ***
+[5097][      debug] Clang frontend action is translating and linting
+[5097][      debug] Loading the following linters files: /home/daveb/Downloads/infer-linux64-v0.17.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5097][      debug] Elapsed: 46.076ms.
+[5097][      debug] 
+[5097][   progress] Found 1 source file to analyze in /home/daveb/C/memory/mem1/infer-out
+[5097][environment] Parallel jobs: 8
+[5104][   progress] src/mem1.c starting
+[5104][   progress] src/mem1.c DONE
+[5097][   progress] 
+[5097][   progress] Analysis finished in 613mss
+[5097][      debug] collected stats:
+[5097][      debug] Backend stats:
+[5097][      debug]   summary_file_try_load= 16
+[5097][      debug]   summary_read_from_disk= 2
+[5097][      debug]   summary_cache_hits= 24 (75%)
+[5097][      debug]   summary_cache_misses= 8
+[5097][      debug]   summary_has_model_queries= 0
+[5097][      debug]   ondemand_procs_analyzed= 1
+[5097][      debug]   ondemand_local_cache_hits= 11 (73%)
+[5097][      debug]   ondemand_local_cache_misses= 4
+[5097][      debug]   
+[5097][      debug] 

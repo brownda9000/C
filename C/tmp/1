@@ -1,0 +1,4 @@
+gdb -tui  ./ex6
+rm ex6 ; gcc ex6.c -ggdb3 -pedantic -Wall -o ex6
+valgrind --leak-check=full --show-leak-kinds=all ./ex6
+massif-visualizer massif.out.10254

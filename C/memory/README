@@ -1,0 +1,1 @@
+infer run -- gcc -c src/mem1.c

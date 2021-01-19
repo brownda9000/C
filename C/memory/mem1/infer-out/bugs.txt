@@ -1,0 +1,22 @@
+Found 2 issues
+
+src/mem1.c:8: error: MEMORY_LEAK
+  memory dynamically allocated by call to `malloc()` at line 6, column 20 is not reachable after line 8, column 4.
+  6.      char * buffer = malloc(1024);
+  7.      sprintf(buffer, "%d", argc);
+  8. >    printf("%s",buffer);
+  9.   }
+  10.   
+
+src/mem1.c:7: error: NULL_DEREFERENCE
+  pointer `buffer` last assigned on line 6 could be null and is dereferenced by call to `sprintf()` at line 7, column 4.
+  5.   {
+  6.      char * buffer = malloc(1024);
+  7. >    sprintf(buffer, "%d", argc);
+  8.      printf("%s",buffer);
+  9.   }
+
+Summary of the reports
+
+       MEMORY_LEAK: 1
+  NULL_DEREFERENCE: 1

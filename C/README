@@ -1,0 +1,19 @@
+gdb -tui  ./ex6
+rm ex6 ; gcc ex6.c  -O0 -ggdb3 -pedantic -pg  -Wall -Werror -o ex6
+rm ex6 ; gcc ex6.c -ggdb3 -pedantic -Wall -o ex6
+valgrind --leak-check=full --show-leak-kinds=all ./ex6
+massif-visualizer massif.out.10254
+
+
+gdb --batch --ex r --ex bt --ex q --args
+
+valgrind --tool=callgrind -dump-instr=yes ./ex6
+
+kcachegrind ./callgrind.out.2404
+
+break foo if x>0
+commands
+silent
+printf "x is %d\n",x
+cont
+end

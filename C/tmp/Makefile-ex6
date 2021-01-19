@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -Wall -ggdb3 -pedantic
+DEPS = myfunctions.h
+OBJ = ex6.o
+
+%.o: %.c $(DEPS)
+	        $(CC) $(CFLAGS) -c -o ex6
+
+go: $(OBJ)
+	        gcc $(CFLAGS) -o ex6

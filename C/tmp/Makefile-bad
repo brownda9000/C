@@ -1,0 +1,13 @@
+CFLAGS = -Wall -ggdb3 -pedantic
+
+all: ex11
+
+# $@ matches the target; $< matches the first dependent
+ex11: ex11.o
+ 	gcc $(CFLAGS) -o $@ $<
+
+ex11.o: ex11.c
+        gcc $(CFLAGS) -c $<
+ 		     
+clean:
+     	rm ex11.o ex11.exe

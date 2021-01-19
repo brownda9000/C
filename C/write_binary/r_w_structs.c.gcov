@@ -1,0 +1,90 @@
+        -:    0:Source:r_w_structs.c
+        -:    0:Graph:r_w_structs.gcno
+        -:    0:Data:r_w_structs.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stddef.h>
+        -:    3:#include <stdlib.h> 
+        -:    4:#include <string.h>
+        -:    5:#include <errno.h>
+        -:    6:
+        -:    7:
+        -:    8://const char* PERSON_FORMAT_IN = "(%[^,], %d, %c)";
+        -:    9://const char* PERSON_FORMAT_OUT = "(%s, %d, %c)\n";
+        -:   10:
+        -:   11://
+        -:   12:// Json format strings
+        -:   13:// 
+        -:   14:const char* PERSON_FORMAT_IN = 
+        -:   15:     "{\n\t\"name\": \"%[^\"]\",\n\t\"age\":%d,\n\t\"gender\": \"%c\"\n}";
+        -:   16:const char* PERSON_FORMAT_OUT = 
+        -:   17:     "{\n\t\"name\": \"%s\",\n\t\"age\":%d,\n\t\"gender\": \"%c\"\n}";
+        -:   18:
+        -:   19://
+        -:   20:// Define Structures
+        -:   21://
+        -:   22:typedef struct Person {
+        -:   23:    char name [20];
+        -:   24:    int age;
+        -:   25:    char status; 
+        -:   26:} Person;
+        -:   27:
+function check called 1 returned 100% blocks executed 67%
+        1:   28:void check(FILE* fp, char* msg) {
+        1:   29:    if (fp == NULL ) {
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   30:        exit(EXIT_FAILURE);
+call    0 never executed
+        -:   31:    }
+        1:   32:}
+function main called 1 returned 100% blocks executed 100%
+        1:   33:int main(int argc, char* argv[]) {
+        -:   34:
+        1:   35:    Person p1 = {
+call    0 returned 100%
+        -:   36:        .name = "Frank smith",
+        -:   37:        .age = 26,
+        -:   38:        .status='M'
+        -:   39:    };
+        -:   40:
+        1:   41:    Person p2;
+call    0 returned 100%
+        -:   42:
+        -:   43:    FILE* file;
+        -:   44:
+        1:   45:    check(file=fopen( "people.dat", "w+"), "Error opening file");
+call    0 returned 100%
+call    1 returned 100%
+        -:   46:
+        -:   47:    // Write to file 
+        1:   48:    fprintf(file, PERSON_FORMAT_OUT, p1.name, p1.age, p1.status);
+call    0 returned 100%
+        -:   49:
+        -:   50:    // Set the pointer of the file to the begining
+        1:   51:    fseek(file, 0 ,SEEK_SET);
+call    0 returned 100%
+        -:   52:
+        1:   53:     fscanf(file, PERSON_FORMAT_IN,  p2.name,  &p2.age, &p2.status );
+call    0 returned 100%
+        1:   54:    printf("Person 2 --> %s %d %c\n", p2.name, p2.age, p2.status);
+call    0 returned 100%
+        -:   55:    /*
+        -:   56:    check(out=fopen("people.dat" , "w+"), "Error opening file");
+        -:   57:    size_t elements_out = fwrite(&p1, sizeof(Point), 1, out);
+        -:   58:    fclose(out);
+        -:   59:
+        -:   60:    if (elements_out == 0 ) {
+        -:   61:        return(2);
+        -:   62:    }
+        -:   63:    check(in=fopen("point.bin" , "rb"), "Error opening file for reading");
+        -:   64:    size_t elements_in = fread(&p2, sizeof(Point), 1, in);
+        -:   65:
+        -:   66:    if (elements_in == 0 ) {
+        -:   67:        return(2);
+        -:   68:    }
+        -:   69:
+        -:   70:    printf("Point 2 %d %d\n", p2.x, p2.y);
+        -:   71:     */
+        -:   72:    
+        -:   73:}

@@ -1,0 +1,339 @@
+desc: (none)
+cmd: ./ex6
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=135080
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=135508
+mem_heap_B=944
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=135958
+mem_heap_B=1208
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=136229
+mem_heap_B=5304
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=137603
+mem_heap_B=5568
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=137669
+mem_heap_B=5856
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=139237
+mem_heap_B=9952
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=141310
+mem_heap_B=10216
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=141376
+mem_heap_B=10504
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10504 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x48D1E83: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 8192 0x48E204F: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E0E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48E2105: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48D39EB: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48D2849: fgets (iofgets.c:53)
+       n0: 4096 0x109F81: main (ex6.c:62)
+   n1: 4096 0x48E10AF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x48DF834: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x48DF834: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48C7165: __vfprintf_internal (vfprintf-internal.c:1719)
+       n1: 4096 0x48B1DE9: fprintf (fprintf.c:32)
+        n0: 4096 0x109F66: main (ex6.c:74)
+ n1: 944 0x48D2AAD: __fopen_internal (iofopen.c:65)
+  n2: 944 0x48D2AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x109E15: main (ex6.c:32)
+   n0: 472 0x109E2F: main (ex6.c:33)
+ n1: 576 0x109508: createBTreeNode (myfunctions.h:116)
+  n1: 576 0x109553: insertBtreeEmployee (myfunctions.h:133)
+   n0: 576 0x109F24: main (ex6.c:71)
+ n1: 528 0x109D79: listAdd (myfunctions.h:401)
+  n0: 528 0x109F06: main (ex6.c:68)
+ n0: 264 0x109E77: main (ex6.c:51)
+#-----------
+snapshot=10
+#-----------
+time=144772
+mem_heap_B=10768
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=144838
+mem_heap_B=11056
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=148287
+mem_heap_B=11320
+mem_heap_extra_B=152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=148353
+mem_heap_B=11608
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=151761
+mem_heap_B=11872
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=151827
+mem_heap_B=12160
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=155209
+mem_heap_B=12424
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=155275
+mem_heap_B=12712
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=157886
+mem_heap_B=12712
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=peak
+n5: 12712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8192 0x48D1E83: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 8192 0x48E204F: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48E0E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x48E2105: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48D39EB: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48D2849: fgets (iofgets.c:53)
+       n0: 4096 0x109F81: main (ex6.c:62)
+   n1: 4096 0x48E10AF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 4096 0x48DF834: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 4096 0x48DF834: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48C7165: __vfprintf_internal (vfprintf-internal.c:1719)
+       n1: 4096 0x48B1DE9: fprintf (fprintf.c:32)
+        n0: 4096 0x109F66: main (ex6.c:74)
+ n1: 1728 0x109508: createBTreeNode (myfunctions.h:116)
+  n1: 1728 0x109553: insertBtreeEmployee (myfunctions.h:133)
+   n0: 1728 0x109F24: main (ex6.c:71)
+ n1: 1584 0x109D79: listAdd (myfunctions.h:401)
+  n0: 1584 0x109F06: main (ex6.c:68)
+ n1: 944 0x48D2AAD: __fopen_internal (iofopen.c:65)
+  n2: 944 0x48D2AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x109E15: main (ex6.c:32)
+   n0: 472 0x109E2F: main (ex6.c:33)
+ n0: 264 0x109E77: main (ex6.c:51)
+#-----------
+snapshot=19
+#-----------
+time=157886
+mem_heap_B=8616
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=158019
+mem_heap_B=8144
+mem_heap_extra_B=184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=158371
+mem_heap_B=4048
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=158504
+mem_heap_B=3576
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=159601
+mem_heap_B=4600
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=166039
+mem_heap_B=5624
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=166499
+mem_heap_B=6096
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=167289
+mem_heap_B=10192
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=190210
+mem_heap_B=6096
+mem_heap_extra_B=192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=190343
+mem_heap_B=5624
+mem_heap_extra_B=176
+mem_stacks_B=0
+heap_tree=detailed
+n5: 5624 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2048 0x48D1E83: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x48E204F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48E0E23: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n2: 1024 0x48E2105: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x48B8A16: __vfscanf_internal (vfscanf-internal.c:739)
+      n1: 1024 0x48B32E1: __isoc99_scanf (isoc99_scanf.c:30)
+       n1: 1024 0x109B60: main_menu (myfunctions.h:337)
+        n0: 1024 0x109FBC: main (ex6.c:85)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1024 0x48E10AF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x48DF834: _IO_new_file_xsputn (fileops.c:1244)
+     n2: 1024 0x48DF834: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D4677: puts (ioputs.c:40)
+       n1: 1024 0x109ACB: main_menu (myfunctions.h:325)
+        n0: 1024 0x109FBC: main (ex6.c:85)
+      n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1728 0x109508: createBTreeNode (myfunctions.h:116)
+  n1: 1728 0x109553: insertBtreeEmployee (myfunctions.h:133)
+   n0: 1728 0x109F24: main (ex6.c:71)
+ n1: 1584 0x109D79: listAdd (myfunctions.h:401)
+  n0: 1584 0x109F06: main (ex6.c:68)
+ n0: 264 0x109E77: main (ex6.c:51)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=220756
+mem_heap_B=5360
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=249480
+mem_heap_B=5096
+mem_heap_extra_B=144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=265416
+mem_heap_B=4072
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=265450
+mem_heap_B=3048
+mem_heap_extra_B=128
+mem_stacks_B=0
+heap_tree=empty

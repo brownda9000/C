@@ -1,0 +1,18 @@
+No symbol "histroy" in current context.
+Breakpoint 1 at 0x16be: file ex14.c, line 122.
+Temporary breakpoint 2 at 0x16e1: file ex14.c, line 127.
+Starting program: /home/daveb/C/ex14/ex14 
+
+Temporary breakpoint 2, main (argc=32767, argv=0x7fffffffdff0) at ex14.c:127
+Continuing.
+
+Breakpoint 1, parseline (line=0x7fffffffdd20 "the", word_arr=0x7fffffffdc50) at ex14.c:122
+$1 = (struct words **) 0x7fffffffdc50
+$2 = (struct words *) 0x55555555a640
+$3 = {
+  word = '\000' <repeats 49 times>,
+  freq = 0,
+  next = 0x0
+}
+Invalid character ';' in expression.
+quit

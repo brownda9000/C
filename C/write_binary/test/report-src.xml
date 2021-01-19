@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.90"/>
+    <errors>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;ptr&apos; is freed twice." verbose="Memory pointed to by &apos;ptr&apos; is freed twice." cwe="415">
+            <location file="test.c" line="6" column="2"/>
+            <location file="test.c" line="5" column="2"/>
+            <symbol>ptr</symbol>
+        </error>
+    </errors>
+</results>
